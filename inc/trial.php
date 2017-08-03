@@ -1,0 +1,33 @@
+<?php
+      printf("<html>");
+      printf("<head>");
+      printf("</head>");
+      printf("<body>");
+      printf("<h3 align='center'>New user creation page</h3>");
+      printf("<form name='form' align='center' action=<? $this->createUserSql(); ?> />");
+      printf("<table align='center'>");
+      printf("<tr>Account Type</tr>");
+      printf("<tr>");
+      printf("<td><input type='radio' name='accountType' value='General'>General</>");
+      printf("<td><input type='radio' name='accountType' value='Admin'>Admin</>");
+      printf("</tr>");
+      printf("<tr><input type='password' name='adminPassword'>Password for admin</></tr>");
+      printf("<tr>");
+      printf("<td>Name</td>");
+      printf("<td><input type='text' name='name' /></td>");
+      printf("</tr>");
+      printf("<tr>");
+      printf("<td>User Name</td>");
+      printf("<td><input type='text' name='userName' /></td>");
+      printf("</tr>");
+      printf("<tr>");
+      printf("<td>Password</td>");
+      printf("<td><input type='password' name='password' /></td>");
+      printf("</tr>");
+      printf("</table>");
+      printf("<input type='submit' />");
+      printf("<button name='cancel' id='cancel' onclick=<? $this->loginPage(); ?> >");
+      printf("</form>");
+      printf("</body>");
+      printf("</html>");
+?>
